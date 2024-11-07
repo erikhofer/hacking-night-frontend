@@ -23,7 +23,7 @@ export function useAutoScroll() {
         dir = 1
       }
       window.scrollTo({ top: curr, behavior: "smooth" })
-      curr += dir * 20
+      curr += dir * 1
     }, 100)
     return () => {
       console.log("CLEAR INTERVAL")
